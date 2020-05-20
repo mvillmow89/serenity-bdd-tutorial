@@ -1,10 +1,4 @@
-C:\Users\Melissa\eclipse-workspace\JPetStore\src\test\java\com\jpetstore\common\CommonTestData.java
-C:\Users\Melissa\eclipse-workspace\JPetStore\src\test\java\com\jpetstore\cucumber\steps\serenity\PetStoreSteps.java
-C:\Users\Melissa\eclipse-workspace\JPetStore\src\test\java\com\jpetstore\cucumber\steps\ProductOrderSteps.java
-C:\Users\Melissa\eclipse-workspace\JPetStore\src\test\java\com\jpetstore\cucumber\steps\UserRegistrationSteps.java
-C:\Users\Melissa\eclipse-workspace\JPetStore\src\test\java\com\jpetstore\tests\AccountsPageTest.java
-C:\Users\Melissa\eclipse-workspace\JPetStore\src\test\java\com\jpetstore\tests\SampleTest.java
-C:\Users\Melissa\eclipse-workspace\JPetStore\src\test\java\com\jpetstore\cucumber\PetStoreApplicationRunner.java
-C:\Users\Melissa\eclipse-workspace\JPetStore\src\test\java\com\jpetstore\tests\LoginPageTest.java
-C:\Users\Melissa\eclipse-workspace\JPetStore\src\test\java\com\jpetstore\tests\OrderProductDataDrivenTest.java
-C:\Users\Melissa\eclipse-workspace\JPetStore\src\test\java\com\jpetstore\tests\OrderProductTest.java
+C:\Users\Melissa\eclipse-workspace\JPetStore-BDD\src\test\java\com\jpetstore\cucumber\steps\serenity\PetStoreSteps.java
+C:\Users\Melissa\eclipse-workspace\JPetStore-BDD\src\test\java\com\jpetstore\cucumber\steps\ProductOrderSteps.java
+C:\Users\Melissa\eclipse-workspace\JPetStore-BDD\src\test\java\com\jpetstore\cucumber\PetStoreApplicationRunner.java
+C:\Users\Melissa\eclipse-workspace\JPetStore-BDD\src\test\java\com\jpetstore\cucumber\steps\UserRegistrationSteps.java

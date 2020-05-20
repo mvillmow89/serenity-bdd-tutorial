@@ -1,9 +1,4 @@
-com\jpetstore\tests\LoginPageTest.class
-com\jpetstore\tests\OrderProductTest.class
 com\jpetstore\cucumber\PetStoreApplicationRunner.class
 com\jpetstore\cucumber\steps\serenity\PetStoreSteps.class
-com\jpetstore\tests\OrderProductDataDrivenTest.class
-com\jpetstore\common\CommonTestData.class
 com\jpetstore\cucumber\steps\UserRegistrationSteps.class
-com\jpetstore\tests\AccountsPageTest.class
 com\jpetstore\cucumber\steps\ProductOrderSteps.class
