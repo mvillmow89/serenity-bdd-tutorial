@@ -1,5 +1,10 @@
 package com.jpetstore.tests;
 
+import net.serenitybdd.core.Serenity;
+import net.serenitybdd.core.SerenitySystemProperties;
+import net.thucydides.core.ThucydidesSystemProperty;
+import net.thucydides.core.util.EnvironmentVariables;
+import net.thucydides.core.util.SystemEnvironmentVariables;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
