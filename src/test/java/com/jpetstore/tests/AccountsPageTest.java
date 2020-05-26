@@ -8,6 +8,8 @@ import org.openqa.selenium.WebDriver;
 
 import com.github.javafaker.Faker;
 import com.jpetstore.steps.PetStoreSteps;
+import static com.jpetstore.utils.PetCategory.*;
+import static com.jpetstore.utils.LanguageType.*;
 
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
@@ -48,7 +50,7 @@ public class AccountsPageTest {
 		shopper.navigateToRegistrationPage();
 		shopper.addNewUserInformation(userName, password, repeatedPassword);
 		shopper.addAccountInformation(firstName, lastName, email, phoneNumber, addr1, addr2, city, state, zip, country);
-		shopper.addProfileInformation("english", "DOGS", true, true);
+		shopper.addProfileInformation(ENGLISH.toString(), DOGS.toString(), true, true);
 		shopper.clickSaveAccountInfo();
 		shopper.clickOnSignInLink();
 		shopper.doLogin(userName, password);

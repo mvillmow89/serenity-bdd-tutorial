@@ -23,16 +23,15 @@ public class DashBoardPage extends PageBase {
 	
 
 	// Pet Category Image Links - FISH, DOGS, REPTILES, CATS
-	@FindBy(xpath ="//div[@id='MainImageContent']//area[@alt='Cats']")
-	private WebElementFacade CATS_LINK;
-	private static String CATS_IMAGE_LINK = "//div[@id='MainImageContent']//area[@alt='Cats']";
-	private static String DOGS_IMAGE_LINK = "//div[@id='MainImageContent']//area[@alt='Dogs']";
-	private static String FISH_IMAGE_LINK = "//div[@id='MainImageContent']//area[@alt='Fish']";
-	private static String REPTILES_IMAGE_LINK = "//div[@id='MainImageContent']//area[@alt='Reptiles']";
+	// Using JS since FireFox has click problems clicking other locator methods
+	private static String CATS_IMAGE_JS_LINK_CLICK = "document.getElementsByTagName('area')[4].click()";
+	private static String DOGS_IMAGE_JS_LINK_CLICK = "document.getElementsByTagName('area')[2].click()";
+	private static String FISH_IMAGE_JS_LINK_CLICK = "document.getElementsByTagName('area')[1].click()";
+	private static String REPTILES_IMAGE_JS_LINK_CLICK = "document.getElementsByTagName('area')[3].click()";
 	
 	// Pet Category Image Links - Two Image links for BIRDS so providing separate links
-	private static final String BIRD_CENTER_IMAGE = "//div[@id='MainImageContent']//area[@alt='Birds'][1]";
-	private static final String BIRD_SECONDARY_IMAGE = "//div[@id='MainImageContent']//area[@alt='Birds'][2]";
+	private static final String BIRD_CENTER_IMAGE_JS_LINK_CLICK = "document.getElementsByTagName('area')[0].click()";
+	private static final String BIRD_SECONDARY_IMAGE_JS_LINK_CLICK = "document.getElementsByTagName('area')[5].click()";
 	
 	/**
 	 * Get the greeting message
@@ -78,22 +77,22 @@ public class DashBoardPage extends PageBase {
 		
 		switch(petType) {
 		case BIRDS:
-			$(BIRD_SECONDARY_IMAGE).click();
+			evaluateJavascript(BIRD_SECONDARY_IMAGE_JS_LINK_CLICK);
 			break;
 		case BIRDS_CENTER:
-			$(BIRD_CENTER_IMAGE).click();
+			evaluateJavascript(BIRD_CENTER_IMAGE_JS_LINK_CLICK);
 			break;
 		case CATS:
-			$(CATS_IMAGE_LINK).click();
+			evaluateJavascript(CATS_IMAGE_JS_LINK_CLICK);
 			break;
 		case DOGS:
-			$(DOGS_IMAGE_LINK).click();
+			evaluateJavascript(DOGS_IMAGE_JS_LINK_CLICK);
 			break;
 		case FISH:
-			$(FISH_IMAGE_LINK).click();
+			evaluateJavascript(FISH_IMAGE_JS_LINK_CLICK);
 			break;
 		case REPTILES:
-			$(REPTILES_IMAGE_LINK).click();
+			evaluateJavascript(REPTILES_IMAGE_JS_LINK_CLICK);
 			break;
 		default:
 			break;

@@ -113,7 +113,7 @@ public class OrderProductDataDrivenTest {
 		shopper.doLogin(userName, password);
 		
 		PetCategory petCategory = PetCategory.valueOf(productCategory);
-		shopper.navigateToProductCategory(petCategory);
+		shopper.navigateToProductCategoryTopNavBar(petCategory);
 		shopper.selectPetByName(petCategory, productName);
 		shopper.addToCartSpecificProduct(productName, specificProductName);
 		shopper.proceedToCheckout();

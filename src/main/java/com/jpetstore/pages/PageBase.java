@@ -125,7 +125,7 @@ public class PageBase extends PageObject {
 		return this.switchToPage(ProductsPage.class);
 	}
 	
-	public ProductsPage navigateToProductCategory(PetCategory productCategory) {		
+	public ProductsPage navigateToProductCategoryTopNavBar(PetCategory productCategory) {		
 		switch(productCategory) {
 		case BIRDS:
 			waitFor(BIRDS_LINK).find(By.xpath(BIRDS_LINK)).click();

@@ -77,8 +77,8 @@ public class PetStoreSteps extends ScenarioSteps {
 	}
 	
 	@Step("Navigate to the Pet Category Page for category: {0}")
-	public ProductsPage navigateToProductCategory(PetCategory petCategory) {
-		return pageBase.navigateToProductCategory(petCategory);
+	public ProductsPage navigateToProductCategoryTopNavBar(PetCategory petCategory) {
+		return pageBase.navigateToProductCategoryTopNavBar(petCategory);
 	}
 
 	

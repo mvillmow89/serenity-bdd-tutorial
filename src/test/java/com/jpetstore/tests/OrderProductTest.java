@@ -8,6 +8,8 @@ import com.github.javafaker.CreditCardType;
 import com.github.javafaker.Faker;
 import com.jpetstore.steps.PetStoreSteps;
 
+import static com.jpetstore.common.CommonTestData.*;
+
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
@@ -30,7 +32,7 @@ public class OrderProductTest {
 		String productCharacteristic = "Friendly dog from England";
 		shopper.enterTheStore();
 		shopper.navigateToLogInPage();
-		shopper.doLogin("test", "test");
+		shopper.doLogin(USERNAME, PASSWORD);
 		shopper.searchForProduct(productType);
 		shopper.selectProductFromSearchResultsTable(productType);
 		shopper.addToCartByViewingItemDetails(productType, productDescription, productCharacteristic);
