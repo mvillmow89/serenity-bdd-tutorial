@@ -17,7 +17,7 @@ import net.thucydides.core.annotations.Steps;
 import net.thucydides.core.annotations.Title;
 
 @RunWith(SerenityRunner.class)
-public class AccountsPageTest {
+public class AccountsPageTest extends BaseTest {
 	
 	@Managed
 	WebDriver driver;
@@ -50,7 +50,7 @@ public class AccountsPageTest {
 		shopper.navigateToRegistrationPage();
 		shopper.addNewUserInformation(userName, password, repeatedPassword);
 		shopper.addAccountInformation(firstName, lastName, email, phoneNumber, addr1, addr2, city, state, zip, country);
-		shopper.addProfileInformation(ENGLISH.toString(), DOGS.toString(), true, true);
+		shopper.addProfileInformation(ENGLISH.getLanguageTypeString(), DOGS.toString(), true, true);
 		shopper.clickSaveAccountInfo();
 		shopper.clickOnSignInLink();
 		shopper.doLogin(userName, password);

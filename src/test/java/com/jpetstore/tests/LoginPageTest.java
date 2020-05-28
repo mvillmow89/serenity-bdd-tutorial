@@ -16,7 +16,7 @@ import net.thucydides.core.annotations.Steps;
 import net.thucydides.core.annotations.Title;
 
 @RunWith(SerenityRunner.class)
-public class LoginPageTest {
+public class LoginPageTest extends BaseTest {
 	
 	@Managed
 	WebDriver driver;

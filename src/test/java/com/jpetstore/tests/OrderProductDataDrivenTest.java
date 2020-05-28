@@ -15,7 +15,7 @@ import net.thucydides.junit.annotations.UseTestDataFrom;
 
 @RunWith(SerenityParameterizedRunner.class)
 @UseTestDataFrom("testdata\\orders.csv")
-public class OrderProductDataDrivenTest {
+public class OrderProductDataDrivenTest extends BaseTest {
 
 	private String userName;
 	private String password;

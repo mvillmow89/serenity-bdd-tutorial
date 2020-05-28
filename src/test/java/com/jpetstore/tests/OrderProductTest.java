@@ -16,7 +16,7 @@ import net.thucydides.core.annotations.Steps;
 import net.thucydides.core.annotations.Title;
 
 @RunWith(SerenityRunner.class)
-public class OrderProductTest {
+public class OrderProductTest extends BaseTest {
 	
 	@Managed
 	WebDriver driver;

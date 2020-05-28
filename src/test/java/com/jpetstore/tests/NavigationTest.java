@@ -19,7 +19,7 @@ import net.thucydides.core.annotations.Title;
 import net.thucydides.core.annotations.WithTag;
 
 @RunWith(SerenityRunner.class)
-public class NavigationTest {
+public class NavigationTest extends BaseTest {
 	
 	@Managed
 	WebDriver driver;
