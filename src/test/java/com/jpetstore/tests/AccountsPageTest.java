@@ -2,11 +2,11 @@ package com.jpetstore.tests;
 
 import static org.junit.Assert.assertEquals;
 
+import com.github.javafaker.Faker;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
-import com.github.javafaker.Faker;
 import com.jpetstore.steps.PetStoreSteps;
 import static com.jpetstore.utils.PetCategory.*;
 import static com.jpetstore.utils.LanguageType.*;
